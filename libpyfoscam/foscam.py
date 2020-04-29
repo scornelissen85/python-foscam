@@ -539,6 +539,18 @@ class FoscamCamera(object):
         '''
         return self.execute_command('ptzMoveBottomRight', callback=callback)
 
+    def ptz_zoom_in(self, callback=None):
+        '''
+        Zoom in.
+        '''
+        return self.execute_command('zoomIn', callback=callback)
+
+    def ptz_zoom_out(self, callback=None):
+        '''
+        Zoom in.
+        '''
+        return self.execute_command('zoomOut', callback=callback)
+
     def ptz_stop_run(self, callback=None):
         '''
         Stop run PT

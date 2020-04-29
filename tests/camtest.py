@@ -160,6 +160,14 @@ class TestFoscam(unittest.TestCase):
         self.foscam.ptz_move_bottom_right()
         self.foscam.ptz_stop_run()
 
+    def test_zoom_in(self):
+        self.foscam.zoom_in()
+        self.foscam.ptz_stop_run()
+
+    def test_zoom_out(self):
+        self.foscam.zoom_in()
+        self.foscam.ptz_stop_run()
+
     def test_reset(self):
         self.foscam.ptz_reset()
 
